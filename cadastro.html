@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro | Almoxarifado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>🏗 Empresa de Reformas</h2>
+        <nav>
+            <a href="index.html">📋 Catálogo</a>
+            <a href="cadastro.html" class="active">➕ Cadastro</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <header>
+            <h1>Cadastrar Material</h1>
+            <p class="subtitle">Adicionar material ao almoxarifado</p>
+        </header>
+
+        <form class="form" id="formCadastro" autocomplete="off">
+
+            <div class="form-group">
+                <label for="codigo">Código *</label>
+                <input type="text" id="codigo" name="codigo" placeholder="Ex: MAT-001" required>
+            </div>
+
+            <div class="form-group">
+                <label for="material">Material *</label>
+                <input type="text" id="material" name="material" placeholder="Ex: Cimento CP-II" required>
+            </div>
+
+            <div class="form-group">
+                <label for="categoria">Categoria *</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione</option>
+                    <option value="Construcao">Construção</option>
+                    <option value="Eletrica">Elétrica</option>
+                    <option value="Hidraulica">Hidráulica</option>
+                    <option value="Pintura">Pintura</option>
+                    <option value="Ferramentas">Ferramentas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="unidade">Unidade *</label>
+                <input type="text" id="unidade" name="unidade" placeholder="Ex: saco, metro, peça" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantidade">Quantidade *</label>
+                <input type="number" id="quantidade" name="quantidade" min="0" step="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="localizacao">Localização *</label>
+                <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Prateleira A3" required>
+            </div>
+
+            <button type="submit" class="btn-primary">
+                💾 Salvar Material
+            </button>
+
+        </form>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+                
